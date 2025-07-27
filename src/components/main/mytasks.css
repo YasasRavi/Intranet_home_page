@@ -1,0 +1,155 @@
+/* mytasks.css */
+
+.medium-bold{
+    font-weight: 400;
+}
+
+.card {
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 2rem;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    cursor: pointer; 
+    transition: 0.3s ease-in-out all;
+}
+
+.task-item:hover{
+    background-color: #b2acac24;
+}
+
+.task-item:last-of-type {
+    border-bottom: none;
+    margin-bottom: 15px; 
+}
+
+
+.task-completion-icon {
+    font-size: 1.2rem; 
+    margin-right: 15px;
+    flex-shrink: 0;
+    color: #ccc; 
+}
+
+.task-completion-icon.checked {
+    color: #007bff; 
+}
+
+
+.task-item .fw-semibold {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.task-item .text-muted.small {
+    font-size: 0.8rem;
+    color: #777 !important;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap; 
+}
+
+.priority-high {
+    background-color: #fcebeb;
+    color: #e65252;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+.priority-medium {
+    background-color: #fff4e5;
+    color: #ff9900;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+.priority-low {
+    background-color: #e8f5e9;
+    color: #4caf50;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+.badge.bg-light.text-dark {
+    background-color: #f0f2f5 !important;
+    color: #555 !important;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+.completed-task {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.completed-task s {
+    text-decoration: line-through;
+}
+
+
+.completed-task .text-success {
+    color: rgb(6, 165, 72) !important; 
+    margin-right: 10px;
+}
+
+.btn-light {
+    background-color: #f0f2f5;
+    color: #555;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.btn-light:hover {
+    background-color: #e0e2e5;
+    color: #333;
+}
+
+hr {
+    border-top: 1px solid #2f2d2d;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.task-item .text-muted.small .info-icon,
+.task-item .text-muted.small .clock-icon {
+    font-size: 0.7rem;
+    color: #999;
+}
+
+.task-item .text-muted.small .info-icon {
+    margin-left: 5px;
+}
+
+.task-item .text-muted.small .clock-icon {
+    margin-right: 1px;
+}
+
+
+.completed-task .bi-check-circle-fill {
+    font-size: 1.1rem; 
+}
+
+.info-icon {
+    color: red !important;
+}

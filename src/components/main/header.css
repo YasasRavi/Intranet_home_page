@@ -1,0 +1,118 @@
+.header-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #3498db, #cc2ecca1);
+  color: white;
+  padding: 24px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.header-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.header-left h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.header-left h2 span {
+  font-weight: bold;
+}
+
+.header-left p {
+  margin: 8px 0 12px;
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
+.header-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 0.95rem;
+  align-items: center;
+}
+
+.header-meta svg {
+  margin-right: 6px;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header-icon {
+  background-color: white;
+  color: #5796e2;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  gap: 0.6rem;
+}
+
+.icon-text{
+  font-size: 14px;
+  color: black;
+  font-weight: 500;
+}
+
+.icon-num{
+  font-weight: 600;
+  color: black;
+}
+
+.icon-text-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .header-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .header-right {
+    flex-direction: row;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .icon-text{
+    font-size: 12px;
+  }
+  .icon-num{
+    font-size: 18px;
+  }
+  .header-icon {
+    width: 9rem;
+    height: 5rem;
+  }
+  .header-right {
+    flex-direction: column;
+  }
+  .header-meta {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px){
+  .header-left {
+    flex: 1;
+    min-width: 185px;
+  }
+}

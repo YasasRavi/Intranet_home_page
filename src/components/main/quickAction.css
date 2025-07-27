@@ -1,0 +1,50 @@
+.quickaction{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+.quick-card {
+    padding: 1rem;
+    transition: 0.3s ease-in-out all;
+}
+
+.quick-card:hover {
+    box-shadow: rgba(111, 169, 228, 0.608) 0px 8px 24px;
+    border-radius: 12px;
+    transform: scale(1.05)
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-6px); 
+    }
+}
+
+.quick-card .bounce-box {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.quick-card:hover .bounce-box {
+    animation: bounce 800ms alternate infinite cubic-bezier(.2, .65, .4, 1);
+}
+
+.quick-card:hover .card-title {
+    color: #499ed6;
+}
+
+.bg-primary{
+    background: linear-gradient(90deg, #499ed6, #1d77e5a1);
+}
+.bg-success{
+    background: linear-gradient(90deg, #49d686e4, #1de53176);
+}
+.bg-warning{
+    background: linear-gradient(90deg, #d1c62ee4, #ff8a0dcf);
+}
+.bg-dark{
+    background: linear-gradient(90deg, #171717e4, #74726fcf);
+}

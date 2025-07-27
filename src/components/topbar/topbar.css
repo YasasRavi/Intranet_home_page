@@ -1,0 +1,50 @@
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar input::placeholder {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.search-bar{
+    width: 300px;
+}
+
+.search-bar-input{
+    padding: .375rem 2rem !important;
+}
+
+.form-control {
+    box-shadow: none !important;
+}
+
+@media (max-width: 576px){
+    .search-bar{
+        width: 290px;
+    }
+    .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .search-bar{
+        margin-top: 1rem;
+    }   
+}
+
+@media (max-width: 400px){
+    .search-bar{
+        width: 200px;
+    }
+}

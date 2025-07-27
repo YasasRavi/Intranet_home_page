@@ -1,0 +1,232 @@
+
+.well-being-corner-container {
+    background-color: #ffffff; 
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px; 
+}
+
+
+.wb-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.wb-header-left {
+    display: flex;
+    align-items: center;
+}
+
+.wb-header-heart-icon {
+    color: #ff69b4; 
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.wb-header h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: 0; 
+}
+
+.wb-your-health-matters-btn {
+    background-color: #ff69b4; 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 14px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
+}
+
+/* Mood Tracker Section */
+.wb-mood-tracker {
+    margin-bottom: 20px;
+}
+
+.wb-mood-tracker h3 {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.wb-mood-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.wb-mood-button {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    color: #666;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.wb-mood-button:hover {
+    background-color: #e0e0e0;
+    border-color: #ccc;
+}
+
+.wb-mood-button svg {
+    margin-right: 8px;
+}
+
+.wb-activity-cards-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.wb-activity-card {
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.251);
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out all;
+}
+
+.wb-activity-card:hover{
+    background-color: #f9f9f9; 
+}
+
+.wb-card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.wb-card-icon-wrapper {
+    border-radius: 50%;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+.wb-activity-card:nth-child(1) .wb-card-icon-wrapper { background-color: #e9e2f9; } 
+.wb-activity-card:nth-child(2) .wb-card-icon-wrapper { background-color: #d1f7f5; } 
+.wb-activity-card:nth-child(3) .wb-card-icon-wrapper { background-color: #ffeace; } 
+
+.wb-card-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.wb-card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.wb-card-tag {
+    padding: 3px 7px;
+    border-radius: 8px;
+    font-size: 11px;
+    margin-top: 3px;
+    align-self: flex-start;
+}
+
+
+.wb-activity-card:nth-child(1) .wb-card-tag { background-color: #f0e6ff; color: #8a2be2; }
+.wb-activity-card:nth-child(2) .wb-card-tag { background-color: #e0fafa; color: #20b2aa; }
+.wb-activity-card:nth-child(3) .wb-card-tag { background-color: #fff2e0; color: #ff8c00; }
+
+
+.wb-card-description {
+    font-size: 13px;
+    color: #666;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.wb-card-action {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #007bff; 
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+    transition: color 0.2s ease;
+}
+
+.wb-card-action:hover {
+    color: #0056b3;
+}
+
+.wb-card-action .wb-action-text {
+    margin-right: 5px;
+}
+
+
+.wb-stats-bar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.03);
+    margin-bottom: 20px;
+}
+
+.wb-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.wb-stat-value {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.wb-stat-label {
+    font-size: 11px;
+    color: #777;
+}
+
+
+.wb-employee-assistance-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px;
+    background-color: #e0f7fa; 
+    color: #007bff; 
+    border: 1px solid #b2ebf2; 
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.wb-employee-assistance-btn:hover {
+    background-color: #c0f1f8;
+    border-color: #80deea;
+}
+
+.wb-employee-assistance-btn svg {
+    margin-right: 8px;
+}
